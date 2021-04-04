@@ -32,7 +32,13 @@
 	Mobile:
 		Speed: 60
 		TurnSpeed: 20
-		Locomotor: heavytracked
+		Locomotor: heavyamphibious
+	LeavesTrails:
+		Image: wake
+		Palette: effect50alpha
+		TerrainTypes: Water
+		StationaryInterval: 18
+		MovingInterval: 6
 	-Crushable:
 	-Crushable@Cheater:
 	-Crushable@Vengeful:
@@ -118,7 +124,13 @@
 	Mobile:
 		Speed: 90
 		TurnSpeed: 32
-		Locomotor: heavytracked
+		Locomotor: heavyamphibious
+	LeavesTrails:
+		Image: wake
+		Palette: effect50alpha
+		TerrainTypes: Water
+		StationaryInterval: 18
+		MovingInterval: 6
 	Guard:
 		Voice: Move
 	Passenger:

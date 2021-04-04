@@ -14,7 +14,7 @@ cmin:
 	Inherits@RADIATON: ^DamagedByRadiation10Percent
 	Inherits@SELECTION_MODE: ^LowPrioritySelectionMode
 	Buildable:
-		Queue: Vehicle.Allies, Vehicle.USA, Vehicle.UK, Vehicle.Germany
+		Queue: Vehicle.Allies, Vehicle.USA, Vehicle.UK, Vehicle.Germany, Ship.Allies
 		BuildPaletteOrder: 10
 		Prerequisites: refinery, ~!global-megawealth, ~techlevel.1
 		Description: Gathers Ore and Gems.\n  Unarmed.\n  Immune to Radiation.\nSpecial ability: Can teleport to own refineries
@@ -68,7 +68,13 @@ cmin:
 	Mobile:
 		Speed: 60
 		TurnSpeed: 32
-		Locomotor: heavytracked
+		Locomotor: heavyamphibious
+	LeavesTrails:
+		Image: wake
+		Palette: effect50alpha
+		TerrainTypes: Water
+		StationaryInterval: 18
+		MovingInterval: 6
 	Guard:
 		Voice: Move
 	RevealsShroud:
@@ -1654,7 +1660,7 @@ ctnk:
 expn:
 	Inherits: ^ExpansionVehicle
 	Buildable:
-		Queue: Vehicle.Allies, Vehicle.USA, Vehicle.UK, Vehicle.Germany
+		Queue: Vehicle.Allies, Vehicle.USA, Vehicle.UK, Vehicle.Germany, Ship.Allies
 	Selectable:
 		Bounds: 68, 56, 0, -7
 	Transforms:

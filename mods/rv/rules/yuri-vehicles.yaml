@@ -119,7 +119,7 @@ gmin:
 	Inherits@RADIATON: ^DamagedByRadiation10Percent
 	Inherits@SELECTION_MODE: ^LowPrioritySelectionMode
 	Buildable:
-		Queue: Vehicle.Yuri, Vehicle.Psi, Vehicle.Trans
+		Queue: Vehicle.Yuri, Vehicle.Psi, Vehicle.Trans, Ship.Yuri
 		BuildPaletteOrder: 10
 		Prerequisites: refinery, ~!global-megawealth, ~techlevel.1
 		Description: Gathers Ore and Gems.\n  Unarmed.\n  Immune to Radiation.\nSpecial ability: Invisiblity
@@ -166,7 +166,13 @@ gmin:
 	Mobile:
 		Speed: 60
 		TurnSpeed: 32
-		Locomotor: heavytracked
+		Locomotor: heavyamphibious
+	LeavesTrails:
+		Image: wake
+		Palette: effect50alpha
+		TerrainTypes: Water
+		StationaryInterval: 18
+		MovingInterval: 6
 	Guard:
 		Voice: Move
 	RevealsShroud:
@@ -1180,7 +1186,7 @@ spider:
 expy:
 	Inherits: ^ExpansionVehicle
 	Buildable:
-		Queue: Vehicle.Yuri, Vehicle.Psi, Vehicle.Trans
+		Queue: Vehicle.Yuri, Vehicle.Psi, Vehicle.Trans, Ship.Yuri
 	Selectable:
 		Bounds: 68, 56, 0, -7
 	Transforms:

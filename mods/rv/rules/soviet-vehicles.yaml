@@ -15,7 +15,7 @@ harv:
 	Inherits@RADIATON: ^DamagedByRadiation10Percent
 	Inherits@SELECTION_MODE: ^LowPrioritySelectionMode
 	Buildable:
-		Queue: Vehicle.Soviets, Vehicle.USSR, Vehicle.Iraq, Vehicle.Cuba, Vehicle.Libya, Vehicle.Baku
+		Queue: Vehicle.Soviets, Vehicle.USSR, Vehicle.Iraq, Vehicle.Cuba, Vehicle.Libya, Vehicle.Baku, Ship.Soviets
 		BuildPaletteOrder: 10
 		Prerequisites: refinery, ~!global-megawealth, ~techlevel.1
 		Description: Gathers Ore and Gems.\n  Immune to Radiation.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
@@ -80,7 +80,13 @@ harv:
 	Mobile:
 		Speed: 60
 		TurnSpeed: 32
-		Locomotor: heavytracked
+		Locomotor: heavyamphibious
+	LeavesTrails:
+		Image: wake
+		Palette: effect50alpha
+		TerrainTypes: Water
+		StationaryInterval: 18
+		MovingInterval: 6
 	RevealsShroud:
 		Range: 6c0
 	# RevealsShroudToIntelligenceOwner:
@@ -1065,7 +1071,7 @@ deva:
 exps:
 	Inherits: ^ExpansionVehicle
 	Buildable:
-		Queue: Vehicle.Soviets, Vehicle.USSR, Vehicle.Iraq, Vehicle.Cuba, Vehicle.Libya, Vehicle.Baku
+		Queue: Vehicle.Soviets, Vehicle.USSR, Vehicle.Iraq, Vehicle.Cuba, Vehicle.Libya, Vehicle.Baku, Ship.Soviets
 	Selectable:
 		Bounds: 68, 56, 0, -7
 	Transforms:

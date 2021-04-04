@@ -163,6 +163,7 @@ gapowr:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 50000
 	Armor:
@@ -400,6 +401,7 @@ gaairc:
 	Building:
 		Footprint: x=x x==
 		Dimensions: 3,2
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 100000
 	Armor:
@@ -915,6 +917,7 @@ gatech:
 	Building:
 		Footprint: xxx xxx
 		Dimensions: 3,2
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 75000
 	Armor:
@@ -985,6 +988,7 @@ gapill:
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 40000
 	Armor:
@@ -1043,6 +1047,7 @@ nasam:
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 60000
 	Armor:
@@ -1191,6 +1196,7 @@ gaorep:
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3,3
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 75000
 	Armor:
@@ -1246,6 +1252,7 @@ gaspysat:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 50000
 	Armor:
@@ -1319,6 +1326,8 @@ gagap:
 		Description: Obscures the enemy's view with shroud.\nRequires power to operate.
 		BuildDuration: 125
 		BuildDurationModifier: 100
+	Building:
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 60000
 	Armor:
@@ -1487,6 +1496,7 @@ atesla:
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 60000
 	Armor:
@@ -1777,6 +1787,7 @@ gamgun:
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 50000
 	Armor:
@@ -1849,6 +1860,7 @@ gagun:
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 50000
 	Armor:

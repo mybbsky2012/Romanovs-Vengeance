@@ -165,6 +165,7 @@ napowr:
 	Building:
 		Footprint: xxx xxx
 		Dimensions: 3,2
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 50000
 	Armor:
@@ -371,6 +372,7 @@ naradr:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 100000
 	Armor:
@@ -837,6 +839,7 @@ naheli:
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3,3
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 75000
 	RevealsShroud:
@@ -954,6 +957,7 @@ nanrct:
 	Building:
 		Footprint: xxxx xxxx xxxx _xx_
 		Dimensions: 4,4
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 100000
 	Armor:
@@ -1012,6 +1016,7 @@ natech:
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3,3
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 75000
 	Armor:
@@ -1055,6 +1060,7 @@ naclon:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 75000
 	Armor:
@@ -1143,6 +1149,7 @@ napsis:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 50000
 	Armor:
@@ -1326,6 +1333,7 @@ naflak:
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 60000
 	Armor:
@@ -1394,6 +1402,7 @@ tesla:
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 60000
 	Armor:
@@ -1474,6 +1483,7 @@ nalasr:
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 40000
 	Armor:
@@ -1617,6 +1627,7 @@ naindp:
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3,3
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	WithIdleOverlay@pistons:
 		Sequence: idle-pistons
 		PauseOnCondition: chronodisable
@@ -1862,6 +1873,7 @@ naprop:
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 60000
 	Armor:

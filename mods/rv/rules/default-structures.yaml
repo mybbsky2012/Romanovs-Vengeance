@@ -11,6 +11,7 @@
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	ProvidesPrerequisite@default:
 	Health:
 		HP: 160000
@@ -113,6 +114,7 @@
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 80000
 	Armor:
@@ -262,6 +264,7 @@
 	Building:
 		Footprint: xxx= xxx= xxx=
 		Dimensions: 4,3
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 75000
 	Armor:
@@ -403,6 +406,7 @@
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 30000
 	Armor:
@@ -543,7 +547,6 @@
 		Dimensions: 4,4
 		TerrainTypes: Water
 		RequiresBaseProvider: false
-	-GivesBuildableArea:
 	Health:
 		HP: 150000
 	Armor:
@@ -670,6 +673,9 @@
 		SoundFiles: awav03a.wav, awav03b.wav, awav03c.wav, awav03d.wav, awav03e.wav
 		Interval: 150, 250
 		Volume: 0.45
+	BaseProvider:
+		Range: 5c0
+		PauseOnCondition: build-incomplete || chronodisable
 
 ^ServiceDepot:
 	Inherits: ^BaseBuilding
@@ -681,6 +687,8 @@
 		Description: Repairs vehicles and removes Terror Drones for a price.
 		BuildDuration: 375
 		BuildDurationModifier: 100
+	Building:
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -737,6 +745,7 @@
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 120000
 	Armor:
@@ -781,6 +790,7 @@
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 100000
 	Armor:

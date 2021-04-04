@@ -98,6 +98,7 @@ yapowr:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 50000
 	Armor:
@@ -591,6 +592,7 @@ yagrnd:
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3,3
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	RevealsShroud:
 		Range: 6c0
 	# RevealsShroudToIntelligenceOwner:
@@ -631,6 +633,7 @@ yadome:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 100000
 	Armor:
@@ -840,6 +843,7 @@ yadisk:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 75000
 	RevealsShroud:
@@ -928,6 +932,7 @@ yatech:
 	Building:
 		Footprint: xxx xxx
 		Dimensions: 3,2
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 75000
 	Armor:
@@ -980,6 +985,7 @@ yapsis:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 50000
 	Armor:
@@ -1144,6 +1150,7 @@ yaggun:
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Valued:
 		Cost: 800
 	Tooltip:
@@ -1306,6 +1313,8 @@ yapsyt:
 		Description: Tower capable of mind controlling up to 3 enemy units.\nRequires power to operate.\nCan detect cloaked units.
 		BuildDuration: 625
 		BuildDurationModifier: 100
+	Building:
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 60000
 	Armor:
@@ -1386,6 +1395,8 @@ yasgen:
 		Description: Makes nearby units and structures invisibile while not firing.\nRequires power to operate.
 		BuildDuration: 250
 		BuildDurationModifier: 100
+	Building:
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 60000
 	Armor:
@@ -1668,6 +1679,7 @@ yaeast02:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Valued:
 		Cost: 2500
 	Tooltip:
