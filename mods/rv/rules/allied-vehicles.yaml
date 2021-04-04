@@ -1,7 +1,7 @@
 amcv:
 	Inherits: ^ConstructionVehicle
 	Buildable:
-		Queue: Vehicle.Allies, Vehicle.USA, Vehicle.UK, Vehicle.Germany
+		Queue: Vehicle.Allies, Vehicle.USA, Vehicle.UK, Vehicle.Germany, Ship.Allies
 	Selectable:
 		Bounds: 68, 56, 0, -7
 	Transforms:

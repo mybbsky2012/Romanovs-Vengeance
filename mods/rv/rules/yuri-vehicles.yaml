@@ -1,7 +1,7 @@
 pcv:
 	Inherits: ^ConstructionVehicle
 	Buildable:
-		Queue: Vehicle.Yuri, Vehicle.Psi, Vehicle.Trans
+		Queue: Vehicle.Yuri, Vehicle.Psi, Vehicle.Trans, Ship.Yuri
 	Transforms:
 		IntoActor: yacnst
 	Voiced:
