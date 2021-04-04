@@ -226,6 +226,13 @@ gapowr:
 		Weapon: ReactorExplode
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, NonGarrisonableStructure, SpyInfiltrate
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, C4
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	IsometricSelectable:
 		DecorationHeight: 60
 	Voiced:
@@ -433,6 +440,13 @@ gaairc:
 		RequiresCondition: !build-incomplete
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, NonGarrisonableStructure, SpyInfiltrate
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, C4
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	Power:
 		Amount: -75
 	Reservable:
@@ -940,6 +954,13 @@ gatech:
 		InfiltrationNotification: BuildingInfiltratedTechnologyStolen
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, NonGarrisonableStructure, SpyInfiltrate
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, C4
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	PlaceBuildingVariants:
 		Actors: gatecb
 	IsometricSelectable:
@@ -1020,6 +1041,14 @@ gapill:
 	AutoTarget:
 	RequiresBuildableArea:
 		Adjacent: 4
+	Targetable:
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, Defense, C4
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	IsometricSelectable:
 		Class: gapill
 		DecorationHeight: 15
@@ -1091,6 +1120,13 @@ nasam:
 		Range: 5c0
 		RequiresCondition: !disabled
 	RenderDetectionCircle:
+	Targetable:
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, Defense, C4
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	Voiced:
 		VoiceSet: PatriotMissileVoice
 		Volume: 0.8
@@ -1220,6 +1256,14 @@ gaorep:
 	Voiced:
 		VoiceSet: OrePurifierVoice
 		Volume: 0.8
+	Targetable:
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, Defense, C4
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	### AI cash cheat
 	GrantConditionOnBotOwner@test:
 		Condition: enable-test-ai
@@ -1301,6 +1345,14 @@ gaspysat:
 		AutoFire: true
 		ChargeInterval: 4500
 		OrderName: SatelliteScanPowerInfoOrder
+	Targetable:
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, C4
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	IsometricSelectable:
 		DecorationHeight: 75
 	Voiced:
@@ -1346,6 +1398,13 @@ gagap:
 	CaptureNotification:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, NonGarrisonableStructure
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, C4
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	RenderShroudCircle:
 	WithIdleOverlay@head:
 		Sequence: idle-head
@@ -1553,6 +1612,14 @@ atesla:
 		RequiresCondition: prism-stack >= 3
 	GrantCondition@IDISABLE:
 		RequiresCondition: lowpower || powerdown || emp || diskdrain
+	Targetable:
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, Defense, C4
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	IsometricSelectable:
 		Class: atesla
 		DecorationHeight: 90
@@ -1833,6 +1900,14 @@ gamgun:
 		Adjacent: 15
 	-Cloak@stealth-generator:
 	-ExternalCondition@INVISIBILITY-GENERATOR:
+	Targetable:
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, Defense, C4
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	IsometricSelectable:
 		Class: gamgun
 		DecorationHeight: 30
@@ -1898,6 +1973,14 @@ gagun:
 		Type: gunturret
 	Power:
 		Amount: -15
+	Targetable:
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, Defense, C4
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	RequiresBuildableArea:
 		Adjacent: 4
 	IsometricSelectable:

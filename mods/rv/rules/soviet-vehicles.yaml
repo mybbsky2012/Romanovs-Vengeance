@@ -114,6 +114,14 @@ harv:
 	HitShape:
 	GpsDotAS:
 		Sequence: Harvester
+	Targetable:
+		RequiresCondition: !in_water
+	Targetable@WATER:
+		TargetTypes: Ground, Water, Vehicle, DetonateAttack
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	WithHarvesterPipsDecoration:
 		Margin: 4, 3
 		Palette: ra

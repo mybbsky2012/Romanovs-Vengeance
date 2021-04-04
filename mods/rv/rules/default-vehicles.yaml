@@ -85,6 +85,14 @@
 		SoundFiles: vmcvstaa.wav
 		Volume: 0.4
 		RequiresCondition: moving
+	Targetable:
+		RequiresCondition: !in_water
+	Targetable@WATER:
+		TargetTypes: Ground, Water, Vehicle, DetonateAttack
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	ProvidesPrerequisite@AIbuildinglimit:
 		RequiresCondition: ai-control
 		Prerequisite: AllowOneOnly
@@ -172,6 +180,14 @@
 		SoundFiles: vmcvstaa.wav
 		Volume: 0.4
 		RequiresCondition: moving
+	Targetable:
+		RequiresCondition: !in_water
+	Targetable@WATER:
+		TargetTypes: Ground, Water, Vehicle, DetonateAttack
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	AutoDeployer@AI:
 		RequiresCondition: ai-control
 		DeployTrigger: Attack

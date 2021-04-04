@@ -195,6 +195,13 @@ napowr:
 		Weapon: ReactorExplode
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, NonGarrisonableStructure, SpyInfiltrate
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, C4
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	PlaceBuildingVariants:
 		Actors: napowb
 	IsometricSelectable:
@@ -568,6 +575,12 @@ naradr:
 		RequiresCondition: !build-incomplete
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, NonGarrisonableStructure, SpyInfiltrate
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, C4
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	InfiltrateForSupportPowerReset:
 		Types: SpyInfiltrate
 	InfiltrateForExploration:
@@ -919,6 +932,13 @@ naheli:
 		Amount: -50
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, NonGarrisonableStructure, SpyInfiltrate
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, C4
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
 		PauseOnCondition: chronodisable
@@ -989,6 +1009,13 @@ nanrct:
 	PowerTooltip:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, NonGarrisonableStructure, SpyInfiltrate
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, C4
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	IsometricSelectable:
 		DecorationHeight: 60
 	Voiced:
@@ -1035,6 +1062,13 @@ natech:
 		InfiltrationNotification: BuildingInfiltratedTechnologyStolen
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, NonGarrisonableStructure, SpyInfiltrate
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, C4
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	IsometricSelectable:
 		DecorationHeight: 120
 	Voiced:
@@ -1060,7 +1094,6 @@ naclon:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
-		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
 	Health:
 		HP: 75000
 	Armor:
@@ -1174,6 +1207,14 @@ napsis:
 		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -200
+	Targetable:
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, C4
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	IsometricSelectable:
 		DecorationHeight: 120
 	Voiced:
@@ -1378,6 +1419,13 @@ naflak:
 		Range: 5c0
 		RequiresCondition: !disabled
 	RenderDetectionCircle:
+	Targetable:
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, Defense, C4
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 
 tesla:
 	Inherits: ^SupportBuilding
@@ -1453,6 +1501,14 @@ tesla:
 		Type: teslacoil
 	Power:
 		Amount: -75
+	Targetable:
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, Defense, C4
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	WithIdleOverlay@powered:
 		Sequence: idle-powered
 		PauseOnCondition: chronodisable
@@ -1520,6 +1576,14 @@ nalasr:
 	AutoTarget:
 	RequiresBuildableArea:
 		Adjacent: 4
+	Targetable:
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, Defense, C4
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	IsometricSelectable:
 		Class: nalasr
 		DecorationHeight: 30
@@ -1649,6 +1713,14 @@ naindp:
 	#	Range: 6c0
 	Power:
 		Amount: -200
+	Targetable:
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, C4
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	IsometricSelectable:
 		DecorationHeight: 120
 
@@ -1898,6 +1970,13 @@ naprop:
 	CaptureNotification:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, NonGarrisonableStructure
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, C4
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	Power:
 		Amount: -25
 	GpsDotAS:

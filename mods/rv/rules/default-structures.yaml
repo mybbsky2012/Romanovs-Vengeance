@@ -100,6 +100,13 @@
 		Condition: invisibility
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, NonGarrisonableStructure, SpyInfiltrate
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, C4
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	Voiced:
 		VoiceSet: ConstructionYardVoice
 		Volume: 0.8
@@ -165,6 +172,14 @@
 	#	Condition: invisibility
 	# ExternalCondition@INVISIBILITY:
 	#	Condition: invisibility
+	Targetable:
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, C4
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	ProvidesPrerequisite@AITowerRush:
 		RequiresCondition: ai-control
 		Prerequisite: AITowerRush
@@ -309,6 +324,12 @@
 		Amount: -40
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, NonGarrisonableStructure, SpyInfiltrate
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, C4
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	SpawnActorsOnSell@allies:
 		ActorTypes: e1
 	SpawnActorsOnSell@soviets:
@@ -443,6 +464,13 @@
 		Position: BottomLeft
 		RequiresSelection: true
 		PipCount: 12
+	Targetable:
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, C4
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 
 ^WarFactory:
 	Inherits: ^BaseBuilding
@@ -725,6 +753,14 @@
 	WithResupplyAnimation:
 		Sequence: repair
 		RequiresCondition: !build-incomplete && !chronodisable
+	Targetable:
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, C4
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	Power:
 		Amount: -35
 	Voiced:
@@ -768,6 +804,13 @@
 		InfiltrationNotification: BuildingInfiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, NonGarrisonableStructure, SpyInfiltrate
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, C4
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	ProvidesPrerequisite@default:
 	ProvidesPrerequisite@swlimit:
 		RequiresPrerequisites: global-swlimit
@@ -814,6 +857,13 @@
 		InfiltrationNotification: BuildingInfiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, NonGarrisonableStructure, SpyInfiltrate
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, C4
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	ProvidesPrerequisite@default:
 	ProvidesPrerequisite@swlimit:
 		RequiresPrerequisites: global-swlimit

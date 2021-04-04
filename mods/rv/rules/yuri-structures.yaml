@@ -158,6 +158,13 @@ yapowr:
 		Weapon: ReactorExplode
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, NonGarrisonableStructure, SpyInfiltrate
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, C4
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	WithCargoPipsDecoration:
 		FullSequence: pip-building-green
 		EmptySequence: pip-building-empty
@@ -606,6 +613,14 @@ yagrnd:
 		Sequence: grind
 	WithAcceptDeliveredCashSound:
 		Sound: bgrinda.wav
+	Targetable:
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, C4
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	Power:
 		Amount: -50
 	IsometricSelectable:
@@ -807,6 +822,13 @@ yadome:
 		RequiresCondition: !build-incomplete
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, NonGarrisonableStructure, SpyInfiltrate
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, C4
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	InfiltrateForSupportPowerReset:
 		Types: SpyInfiltrate
 	InfiltrateForExploration:
@@ -955,6 +977,13 @@ yatech:
 		InfiltrationNotification: BuildingInfiltratedTechnologyStolen
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, NonGarrisonableStructure, SpyInfiltrate
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, C4
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	PlaceBuildingVariants:
 		Actors: yatecb
 	IsometricSelectable:
@@ -1010,6 +1039,14 @@ yapsis:
 		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -200
+	Targetable:
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, C4
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	IsometricSelectable:
 		DecorationHeight: 120
 	Voiced:
@@ -1226,6 +1263,14 @@ yaggun:
 	DetectCloaked:
 		Range: 5c0
 		RequiresCondition: !disabled
+	Targetable:
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, Defense, C4
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	RenderDetectionCircle:
 	Voiced:
 		VoiceSet: GatlingCannonVoice
@@ -1340,7 +1385,13 @@ yapsyt:
 	Power:
 		Amount: -100
 	Targetable:
-		TargetTypes: Ground, C4, DetonateAttack, Structure, NonGarrisonableStructure
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, Defense, C4
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	Armament:
 		Weapon: TowerMindControl
 		MuzzleSequence: muzzle
@@ -1420,6 +1471,13 @@ yasgen:
 		RequiresCondition: !disabled
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, NonGarrisonableStructure
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, C4
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	WithSpriteBody:
 		PauseOnCondition: disabled || chronodisable
 	GrantCondition@IDISABLE:
@@ -1719,6 +1777,14 @@ yaeast02:
 		RequiresCondition: !chronodisable
 	Power:
 		Amount: -100
+	Targetable:
+		RequiresCondition: !in_water
+	Targetable@Water:
+		TargetTypes: Ground, Water, WaterStructure, Defense, C4
+		RequiresCondition: in_water
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: in_water
 	IsometricSelectable:
 		DecorationHeight: 135
 	DetectCloaked:
